@@ -6,13 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="52dp"
+        android:src="@mipmap/logosantotomas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Temp"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:text="°C"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <TextView
+        android:id="@+id/Humed"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:text="%"
+        app:layout_constraintTop_toBottomOf="@+id/Temp"
+        tools:layout_editor_absoluteX="75dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
